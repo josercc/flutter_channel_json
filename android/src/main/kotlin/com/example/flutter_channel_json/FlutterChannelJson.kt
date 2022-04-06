@@ -40,6 +40,21 @@ public class FlutterChannelJson<T> {
         success = jsonObject.getBoolean("success")
     }
 
+    public constructor(json:Any) {
+        if (json is String) {
+            val jsonObject = JSONObject(json)
+            code = jsonObject.getInt("code")
+            message = jsonObject.getString("message")
+            data = jsonObject.get("data") as T?
+            success = jsonObject.getBoolean("success")
+        } else {
+            code = 500
+            message = "json格式错误"
+            data = null
+            success = false
+        }
+    }
+
     public fun toJsonString(): String {
         val json = JSONObject()
         json.put("code", code)

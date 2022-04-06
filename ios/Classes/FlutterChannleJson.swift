@@ -1,5 +1,5 @@
 
-public class FlutterChannelJson<T: Codable> {
+public class FlutterChannelJson<T: Codable> : Codable {
     public let code: Int
     public let message: String
     public let data: T?
@@ -33,6 +33,14 @@ public class FlutterChannelJson<T: Codable> {
         self.message = json.message
         self.data = json.data
         self.success = json.success
+    }
+
+    public convenience init(from json:Any) throws {
+        if let jsonString = json as? String {
+            try self.init(from: jsonString)
+        } else {
+            self.init(failure: "json格式错误")
+        }
     }
 
     public init(fron json:[String:Any]) {

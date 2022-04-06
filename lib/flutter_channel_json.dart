@@ -55,4 +55,12 @@ class FlutterChannelJson<T> {
       success: false,
     );
   }
+
+  factory FlutterChannelJson.dyamic(dynamic json) {
+    if (json is String) {
+      return FlutterChannelJson.fromJsonString(json);
+    } else {
+      return FlutterChannelJson.failure('无法解析的数据类型');
+    }
+  }
 }
