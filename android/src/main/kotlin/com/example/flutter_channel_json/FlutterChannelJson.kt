@@ -1,3 +1,5 @@
+import org.json.JSONObject
+import Gson
 /// Flutter 通道消息
 public class FlutterChannelJson<T> {
     /// 状态吗
@@ -43,6 +45,7 @@ public class FlutterChannelJson<T> {
     /// 根据 JSON 字符串 构造
     /// @param json JSON 字符串
     public constructor(jsonString: String) {
+
         val json = JSONObject(jsonString)
         code = json.getInt("code")
         message = json.getString("message")
