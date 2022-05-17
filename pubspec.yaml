@@ -1,6 +1,6 @@
 name: flutter_channel_json
 description: 用来规范 Method Channel 数据传输的数据格式,通常结合 flutter_channel_event_bus 使用
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/josercc/flutter_channel_json
 
 environment:
@@ -32,8 +32,11 @@ flutter:
     # then add platforms following the instruction here:
     # https://flutter.dev/docs/development/packages-and-plugins/developing-packages#plugin-platforms
     # -------------------
-      some_platform:
-        pluginClass: somePluginClass
+      android:
+        package: com.example.flutter_channel_json
+        pluginClass: FlutterChannelJsonPlugin
+      ios:
+        pluginClass: FlutterChannelJsonPlugin
     # -------------------
 
   # To add assets to your plugin package, add an assets section, like this:
