@@ -30,15 +30,6 @@ class FlutterChannelJson<T> {
         this.success = false
     }
 
-    public constructor(jsonString: String) {
-        var gson = Gson();
-        val json = gson.fromJson<FlutterChannelJson<T>>(jsonString, FlutterChannelJson::class.java)
-        code = json.code
-        message = json.message
-        data = json.data
-        success = json.success
-    }
-
     public constructor(jsonString: String, clazz: Class<T>) {
         var gson = Gson();
         val json = gson.fromJson(jsonString, FlutterChannelJson::class.java)
@@ -48,7 +39,18 @@ class FlutterChannelJson<T> {
         success = json.success
     }
 
+    public  constructor(json: Map<String,Any>) {
+        this.code = json["code"] as Int
+        this.message = json["message"] as String
+        this.data = json["data"] as T?
+        this.success = json["success"] as Boolean
+    }
+
     public fun toJsonString(): String {
         return Gson().toJson(this)
+    }
+
+    public  fun toJson(): Map<String,Any> {
+        return Gson().fromJson(toJsonString(), Map::class.java) as Map<String, Any>
     }
 }
