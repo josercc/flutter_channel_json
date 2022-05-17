@@ -1,0 +1,4 @@
+module flutter_channel_json {
+    header "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.build/flutter_channel_json-Swift.h"
+    requires objc
+}

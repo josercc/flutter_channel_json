@@ -1,0 +1,145 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonPackageTests.xctest/Contents/MacOS/flutter_channel_jsonPackageTests",
+      "productName" : "flutter_channel_jsonPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.flutter_channel_json-debug.module" : {
+      "executable" : "/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "importPath" : "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/king/Documents/flutter_channel_json/ios/Classes/FlutterChannleJson.swift"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "flutter_channel_json",
+      "moduleOutputPath" : "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.swiftmodule",
+      "objects" : [
+        "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.build/FlutterChannleJson.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx10.10",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-g",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.build/flutter_channel_json-Swift.h",
+        "-sdk",
+        "/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk",
+        "-F",
+        "/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.build/FlutterChannleJson.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/Users/king/Documents/flutter_channel_json/ios/Classes/FlutterChannleJson.swift"
+      ],
+      "tempsPath" : "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.flutter_channel_jsonTests-debug.module" : {
+      "executable" : "/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "importPath" : "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/king/Documents/flutter_channel_json/ios/Tests/FlutterChannelJsonTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.swiftmodule"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "flutter_channel_jsonTests",
+      "moduleOutputPath" : "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonTests.swiftmodule",
+      "objects" : [
+        "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonTests.build/FlutterChannelJsonTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx11.0",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-g",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-sdk",
+        "/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk",
+        "-F",
+        "/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonTests.build/FlutterChannelJsonTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonTests.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/Users/king/Documents/flutter_channel_json/ios/Tests/FlutterChannelJsonTests.swift"
+      ],
+      "tempsPath" : "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

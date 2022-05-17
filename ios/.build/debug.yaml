@@ -1,0 +1,78 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "flutter_channel_json-debug.module": ["<flutter_channel_json-debug.module>"]
+  "flutter_channel_jsonPackageTests-debug.test": ["<flutter_channel_jsonPackageTests-debug.test>"]
+  "flutter_channel_jsonTests-debug.module": ["<flutter_channel_jsonTests-debug.module>"]
+  "main": ["<flutter_channel_json-debug.module>"]
+  "test": ["<flutter_channel_json-debug.module>","<flutter_channel_jsonPackageTests-debug.test>","<flutter_channel_jsonTests-debug.module>"]
+default: "main"
+nodes:
+  "/Users/king/Documents/flutter_channel_json/ios/Classes/":
+    is-directory-structure: true
+  "/Users/king/Documents/flutter_channel_json/ios/Tests/":
+    is-directory-structure: true
+commands:
+  "<flutter_channel_json-debug.module>":
+    tool: phony
+    inputs: ["/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.build/FlutterChannleJson.swift.o","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.swiftmodule"]
+    outputs: ["<flutter_channel_json-debug.module>"]
+
+  "<flutter_channel_jsonPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonPackageTests.xctest/Contents/MacOS/flutter_channel_jsonPackageTests"]
+    outputs: ["<flutter_channel_jsonPackageTests-debug.test>"]
+
+  "<flutter_channel_jsonTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonTests.build/FlutterChannelJsonTests.swift.o","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonTests.swiftmodule"]
+    outputs: ["<flutter_channel_jsonTests-debug.module>"]
+
+  "C.flutter_channel_json-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/king/Documents/flutter_channel_json/ios/Classes/FlutterChannleJson.swift"]
+    outputs: ["/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.build/FlutterChannleJson.swift.o","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.swiftmodule"]
+    executable: "/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "flutter_channel_json"
+    module-output-path: "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.swiftmodule"
+    import-paths: ["/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.build"
+    objects: ["/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.build/FlutterChannleJson.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j16","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.build/flutter_channel_json-Swift.h","-sdk","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk","-F","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/king/Documents/flutter_channel_json/ios/Classes/FlutterChannleJson.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 16
+
+  "C.flutter_channel_jsonPackageTests-debug.test":
+    tool: shell
+    inputs: ["/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.build/FlutterChannleJson.swift.o","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonTests.build/FlutterChannelJsonTests.swift.o"]
+    outputs: ["/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonPackageTests.xctest/Contents/MacOS/flutter_channel_jsonPackageTests"]
+    description: "Linking ./.build/x86_64-apple-macosx/debug/flutter_channel_jsonPackageTests.xctest/Contents/MacOS/flutter_channel_jsonPackageTests"
+    args: ["/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug","-o","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonPackageTests.xctest/Contents/MacOS/flutter_channel_jsonPackageTests","-module-name","flutter_channel_jsonPackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-Xlinker","-rpath","-Xlinker","/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.5/macosx","-target","x86_64-apple-macosx11.0","-Xlinker","-add_ast_path","-Xlinker","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonTests.swiftmodule","-sdk","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk","-F","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.flutter_channel_jsonTests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/king/Documents/flutter_channel_json/ios/Tests/FlutterChannelJsonTests.swift","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_json.swiftmodule"]
+    outputs: ["/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonTests.build/FlutterChannelJsonTests.swift.o","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonTests.swiftmodule"]
+    executable: "/Applications/Xcode-13.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "flutter_channel_jsonTests"
+    module-output-path: "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonTests.swiftmodule"
+    import-paths: ["/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonTests.build"
+    objects: ["/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/flutter_channel_jsonTests.build/FlutterChannelJsonTests.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx11.0","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/index/store","-Onone","-enable-testing","-g","-j16","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/king/Documents/flutter_channel_json/ios/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-sdk","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk","-F","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode-13.3.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"]
+    sources: ["/Users/king/Documents/flutter_channel_json/ios/Tests/FlutterChannelJsonTests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 16
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/king/Documents/flutter_channel_json/ios/Classes/","/Users/king/Documents/flutter_channel_json/ios/Tests/","/Users/king/Documents/flutter_channel_json/ios/Package.swift","/Users/king/Documents/flutter_channel_json/ios/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
