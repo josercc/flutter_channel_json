@@ -1,7 +1,9 @@
-## 1.0.0
-
-* 发布 1.0.0 版本 具体请看 [README](./README.md)
-
 ## 1.0.1
 
-* 修复为插件模式 原生可以找到对应的库 修复Flutter 可以找到对应支持平台
+* Repair to plug-in mode. You can find the corresponding library. Repair fluent to find the corresponding support platform
+
+## 1.0.0
+
+* Release version 1.0.0. See [README](./README.md)for details
+
+

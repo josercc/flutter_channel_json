@@ -1,5 +1,5 @@
 name: flutter_channel_json
-description: 用来规范 Method Channel 数据传输的数据格式,通常结合 flutter_channel_event_bus 使用
+description: It is used to standardize the data format of method channel data transmission, usually combined with fluent_ channel_ event_ Bus usage
 version: 1.0.1
 homepage: https://github.com/josercc/flutter_channel_json
 
